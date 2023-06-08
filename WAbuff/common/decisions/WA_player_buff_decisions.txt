@@ -1,0 +1,100 @@
+WA_player_buff_cat = {
+
+	capitalShipProduciton_enable = {
+	
+		icon = generic_naval
+		
+		visible = { NOT = {has_idea = capitalShipProduciton_idea}}
+		available = { NOT = {has_idea = capitalShipProduciton_idea}}
+		
+		complete_effect = {add_ideas = capitalShipProduciton_idea}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 2
+				NOT = { OR = { tag = ENG tag = USA } }
+			}
+		}
+	}
+	
+	capitalShipProduciton_disable = {
+		
+		icon = generic_naval
+		
+		visible = {has_idea = capitalShipProduciton_idea}
+		
+		complete_effect = {remove_ideas = capitalShipProduciton_idea}
+		
+		ai_will_do = {factor = 0}
+	}
+
+	WA_Player_Buff = {
+		icon = generic_research
+		visible = {NOT = {has_idea = wa_buff_idea}}
+		available = { 
+			NOT = {has_idea = wa_buff_idea}
+			date > 1938.1.1
+		}
+
+		complete_effect = {add_ideas = wa_buff_idea}
+		ai_will_do = {factor = 0}
+	}
+
+	WA_player_buff_disable = {
+		
+		icon = generic_naval
+		
+		visible = {has_idea = wa_buff_idea}
+		
+		complete_effect = {remove_ideas = wa_buff_idea}
+		
+		ai_will_do = {factor = 0}
+	}
+
+	Add_more_compliance = {
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+		available = {
+			NOT = {has_idea = Add_more_compliance_buff}
+		}
+
+        cost = 0
+
+        fire_only_once = no
+
+		complete_effect = {
+			add_ideas = Add_more_compliance_buff
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Add_more_compliance_disalbe = {
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+		visible = {has_idea = Add_more_compliance_buff}
+
+        cost = 0
+		
+        fire_only_once = no
+
+		complete_effect = {
+			remove_ideas = Add_more_compliance_buff
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

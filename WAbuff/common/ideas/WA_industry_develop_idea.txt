@@ -1,0 +1,112 @@
+ideas = {		
+
+	country = {
+		develop_rural_bonds = {
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				picture = ger_mefo_bills_payment
+				
+				modifier = {
+					consumer_goods_factor = 0.02
+				}
+		}
+
+		develop_town_bonds = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills_payment
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+			}
+		}
+
+		develop_large_town_bonds = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills_payment
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		develop_city_bonds = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			modifier = {
+				consumer_goods_factor = 0.035
+			}
+		}
+
+		develop_large_city_bonds = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			modifier = {
+				consumer_goods_factor = 0.04
+			}
+		}
+
+		develop_metropolis_bonds = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = ger_mefo_bills_payment
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+}	

@@ -1,0 +1,29 @@
+﻿l_english:
+
+WA_player_buff_cat:0 "WA Player Buff"
+
+capitalShipProduciton_enable:0 "Reduce navy cost"
+capitalShipProduciton_disable:0 "Remove reduce navy cost"
+
+WA_Player_Buff:0 "WA Player Buff"
+WA_player_buff_disable:0 "Cancel buff"
+
+capitalShipProduciton_idea:0 "Reduce navy cost"
+wa_buff_idea:0 "WA Player Buff"
+
+Add_more_compliance:0 "Add more compliance"
+
+develop_rural:0 "develop rural"
+develop_town:0 "develop town"
+develop_large_town:0 "develop large town"
+develop_city:0 "develop city"
+develop_large_city:0 "develop large city"
+develop_metropolis:0 "develop metropolis"
+develop_coal:0 "coal prospecting"
+
+develop_rural_bonds:0 "偿还开发乡村债券"
+develop_town_bonds:0 "偿还开发发达乡村债券"
+develop_large_town_bonds:0 "偿还开发稀疏城镇债券"
+develop_city_bonds:0 "偿还开发城镇债券"
+develop_large_city_bonds:0 "偿还开发密集城镇债券"
+develop_metropolis_bonds:0 "偿还开发大城市债券"

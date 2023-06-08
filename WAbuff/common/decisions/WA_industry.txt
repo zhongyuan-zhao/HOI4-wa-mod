@@ -1,0 +1,254 @@
+WA_player_buff_cat = {
+	##建设乡村
+	develop_rural = {
+		icon = category_SOV_merge_designers
+		cost = 10
+		days_remove = 60
+		days_re_enable = 120
+		fire_only_once = no 
+		available = {
+            num_of_civilian_factories_available_for_projects > 8
+			any_owned_state = {
+				infrastructure > 2
+				is_fully_controlled_by = ROOT    
+				has_state_category = rural
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		modifier = {
+            civilian_factory_use = 8
+        }
+		complete_effect = {
+			economy_fatigue_level_down_2 = yes
+        }
+		remove_effect = {  
+			random_owned_controlled_state = {
+                limit = {
+					infrastructure > 2
+					is_fully_controlled_by = ROOT
+					has_state_category = rural
+				}
+                set_state_category = town
+			}
+		} 
+	}
+
+	##建设发达乡村
+	develop_town = {
+		icon = category_SOV_merge_designers
+		cost = 15
+		days_remove = 70
+		days_re_enable = 120
+		fire_only_once = no 
+		available = {
+            num_of_civilian_factories_available_for_projects > 12
+			any_owned_state = {
+				infrastructure > 3
+				is_fully_controlled_by = ROOT
+				has_state_category = town
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		modifier = {
+            civilian_factory_use = 12
+        }
+		complete_effect = {
+			economy_fatigue_level_down_4 = yes
+        }
+		remove_effect = {
+			random_owned_controlled_state = {
+                limit = {
+					infrastructure > 3
+					is_fully_controlled_by = ROOT
+					has_state_category = town
+				}
+                set_state_category = large_town
+            } 
+		} 
+	}
+
+	##建设稀疏城镇
+	develop_large_town = {
+		icon = category_SOV_merge_designers
+		cost = 25
+		days_remove = 80
+		days_re_enable = 120
+		fire_only_once = no 
+		available = {
+            num_of_civilian_factories_available_for_projects > 15
+			any_owned_state = {
+				infrastructure > 4
+				is_fully_controlled_by = ROOT    
+				has_state_category = large_town
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		modifier = {
+            civilian_factory_use = 15
+        }
+		complete_effect = {
+			economy_fatigue_level_down_5 = yes
+        }
+		remove_effect = {  
+			random_owned_controlled_state = {
+                limit = {
+					infrastructure > 4
+					is_fully_controlled_by = ROOT
+					has_state_category = large_town
+				}
+                set_state_category = city
+            } 
+		} 
+	}
+	
+	##建设城镇地区
+	develop_city = {
+		icon = category_SOV_merge_designers
+		cost = 35
+		days_remove = 90
+		days_re_enable = 120
+		fire_only_once = no 
+		available = {
+            num_of_civilian_factories_available_for_projects > 18
+			any_owned_state = {
+				infrastructure > 5
+				is_fully_controlled_by = ROOT    
+				has_state_category = city
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		modifier = {
+            civilian_factory_use = 18
+        }
+		complete_effect = {
+			economy_fatigue_level_down_5 = yes
+        }
+		remove_effect = {  
+			random_owned_controlled_state = {
+                limit = {
+					infrastructure > 5
+					is_fully_controlled_by = ROOT
+					has_state_category = city
+				}
+                set_state_category = large_city
+            } 
+		} 
+	}
+
+	##建设密集城镇地区
+	develop_large_city = {
+		icon = category_SOV_merge_designers
+		cost = 45
+		days_remove = 100
+		days_re_enable = 120
+		fire_only_once = no 
+		available = {
+            num_of_civilian_factories_available_for_projects > 20
+			any_owned_state = {
+				infrastructure > 6
+				is_fully_controlled_by = ROOT    
+				has_state_category = large_city
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		modifier = {
+            civilian_factory_use = 20
+        }
+		complete_effect = {
+			economy_fatigue_level_down_8 = yes
+        }
+		remove_effect = {  
+			random_owned_controlled_state = {
+                limit = {
+					infrastructure > 6
+					is_fully_controlled_by = ROOT
+					has_state_category = large_city
+				}
+                set_state_category = metropolis
+            } 
+		} 
+	}
+
+	##建设大城市地区
+	develop_metropolis = {
+		icon = category_SOV_merge_designers
+		cost = 65
+		days_remove = 120
+		days_re_enable = 120
+		fire_only_once = no 
+		available = {
+            num_of_civilian_factories_available_for_projects > 25
+			any_owned_state = {
+				infrastructure > 7
+				is_fully_controlled_by = ROOT    
+				has_state_category = metropolis
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		modifier = {
+            civilian_factory_use = 25
+        }
+		complete_effect = {
+			economy_fatigue_level_down_10 = yes
+        }
+		remove_effect = {  
+			random_owned_controlled_state = {
+                limit = {
+					infrastructure > 7
+					is_fully_controlled_by = ROOT
+					has_state_category = metropolis
+				}
+                set_state_category = megalopolis
+            } 
+		} 
+	}
+
+	#开采煤矿
+	develop_coal = {
+		icon = coal
+
+		available = {
+			any_controlled_state = {
+				has_resources_amount = { resource = coal amount > 10 }
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		cost = 10
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+                limit = {
+					has_resources_amount = { resource = coal amount > 10 }
+					is_fully_controlled_by = ROOT
+				}
+                
+				add_resource = {
+					type = coal
+					amount = 100
+				}
+            } 
+		}
+	}
+}

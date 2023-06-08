@@ -1,0 +1,5 @@
+WA_player_buff_cat = {
+	icon = decision_category_generic_industry
+	
+	visible = {}
+}

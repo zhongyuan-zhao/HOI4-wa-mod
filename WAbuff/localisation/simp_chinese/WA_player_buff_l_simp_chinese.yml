@@ -1,0 +1,32 @@
+﻿l_simp_chinese:
+
+WA_player_buff_cat:0 "WA玩家Buff"
+
+capitalShipProduciton_enable:0 "减少海军建造成本"
+capitalShipProduciton_enable_desc:0 "海军太贵了，我们要更便宜的造船"
+ 
+capitalShipProduciton_disable:0 "撤销减少海军建造成本"
+capitalShipProduciton_disable_desc:0 ""
+
+WA_Player_Buff:0 "WA加强玩家"
+WA_player_buff_disable:0 "取消加强"
+
+capitalShipProduciton_idea:0 "减少海军成本"
+wa_buff_idea:0 "WA加强玩家"
+
+Add_more_compliance:0 "增加顺从度"
+
+develop_rural:0 "发行乡村建设债券"
+develop_town:0 "发行发达乡村建设债券"
+develop_large_town:0 "发行稀疏城镇建设债券"
+develop_city:0 "发行城镇建设债券"
+develop_large_city:0 "发行密集城镇建设债券"
+develop_metropolis:0 "发行大城市建设债券"
+develop_coal:0 "开采煤矿"
+
+develop_rural_bonds:0 "偿还开发乡村债券"
+develop_town_bonds:0 "偿还开发发达乡村债券"
+develop_large_town_bonds:0 "偿还开发稀疏城镇债券"
+develop_city_bonds:0 "偿还开发城镇债券"
+develop_large_city_bonds:0 "偿还开发密集城镇债券"
+develop_metropolis_bonds:0 "偿还开发大城市债券"
