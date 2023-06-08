@@ -251,4 +251,41 @@ WA_player_buff_cat = {
             } 
 		}
 	}
+
+	#开采铝土矿
+	develop_bauxite = {
+		icon = aluminium
+
+		available = {
+			any_controlled_state = {
+				has_resources_amount = { resource = bauxite amount > 9 }
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		cost = 10
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+                limit = {
+					has_resources_amount = { resource = bauxite amount > 9 }
+					is_fully_controlled_by = ROOT
+				}
+                
+				add_resource = {
+					type = bauxite
+					amount = 100
+				}
+            } 
+		}
+	}
 }
